@@ -16,9 +16,6 @@ jobs:
 
       - name: make
         run: |
-          echo "y" | sudo apt-get install gettext
-          echo "y" | sudo apt-get install mkisofs
-          echo "y" | sudo apt-get install genisoimage
           sudo sh ./mk.sh 
       - name: one file linux
         run: |    
@@ -34,6 +31,6 @@ jobs:
           prerelease: false
           title: "Development Build [单文件linux]"
           files: |
-            ./onefile/*
+            onefile/*
             
       
