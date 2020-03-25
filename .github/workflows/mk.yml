@@ -22,8 +22,9 @@ jobs:
           sudo sh ./mk.sh 
       - name: one file linux
         run: |    
-          sudo mkdir ./onefile
-          cp -r ./linux-4.14.10/arch/x86_64/boot/bzimage ./onefile/tinycore.efi
+          cd ..
+          sudo mkdir onefile
+          cp -r linux-4.14.10/arch/x86_64/boot/bzimage onefile/tinycore.efi
       
       - name: upload all    
         uses: marvinpinto/action-automatic-releases@latest
