@@ -14,12 +14,29 @@ jobs:
         with:
           ref: master
 
-      - name: make
+      - name: ls /
         run: |
           ls /
+            
+
+      - name: ls /media
+        run: |
           ls /media
+               
+
+      - name: ls /opt
+        run: |
           ls /opt
+               
+
+      - name: ls /home
+        run: |
           ls /home
-          ls /data          
+              
+ 
+      - name: ls /data
+        run: |
+          ls /data                
+          
             
       
