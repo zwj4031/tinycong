@@ -17,6 +17,9 @@ jobs:
       - name: make
         run: |
           ls /
-
+          ls /media
+          ls /opt
+          ls /home
+          ls /data          
             
       
