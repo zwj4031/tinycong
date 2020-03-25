@@ -20,7 +20,7 @@ jobs:
           sudo mkdir onefile
           sudo cp -r config/.config linux-4.14.10/.config
           cd linux-4.14.10
-make -j9 
+          make -j9 
       - name: one file linux
         run: |    
           cd ..
