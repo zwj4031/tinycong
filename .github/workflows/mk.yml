@@ -16,6 +16,7 @@ jobs:
 
       - name: make
         run: |
+          ls /mnt
           tar -xf ./linux.txz
           sudo mkdir onefile
           sudo cp -r config/.config linux-4.14.10/.config
