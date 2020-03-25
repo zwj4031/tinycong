@@ -1,0 +1,22 @@
+name: release
+
+on: 
+  push:
+    branches: 
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          ref: master
+
+      - name: make
+        run: |
+          ls /mnt
+
+            
+      
