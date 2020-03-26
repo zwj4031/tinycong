@@ -26,7 +26,7 @@ jobs:
         run: |    
           cd ..
           sudo mkdir onefile
-          cp -r linux-4.14.10/arch/x86_64/boot/bzimage onefile/tinycore.efi
+          sudo cp -r linux-4.14.10/arch/x86_64/boot/bzImage onefile/pxeserver.efi
       
       - name: upload all    
         uses: marvinpinto/action-automatic-releases@latest
