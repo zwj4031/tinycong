@@ -25,7 +25,7 @@ jobs:
       - name: one file linux
         run: |
           sudo mkdir ../onefile    
-          sudo cp arch/x86_64/boot/bzImage ../onefile/pxeserver.efi
+          sudo cp arch/boot/bzImage ../onefile/pxeserver.efi
           
           
           
